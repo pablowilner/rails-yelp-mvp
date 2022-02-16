@@ -1,0 +1,9 @@
+<div class="container">
+    <%= simple_form_for(@restaurant) do |f| %>
+      <%= f.input :name, label: 'Restaurant name', label_html: {class: "text-primary"} %>
+      <%= f.input :address, label: 'Restaurant address', label_html: {class: "text-primary"} %>
+      <%= f.input :phone_number, label: 'Restaurant phone_number', label_html: {class: "text-primary"}%>
+      <%= f.input :category, :collection => ["chinese", "italian", "japanese", "french"], label_html: {class: "text-primary"}%>
+      <%= f.submit "Create Restaurant", class: "btn btn-primary mt-3"%>
+    <% end %>
+</div>

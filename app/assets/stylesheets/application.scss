@@ -13,4 +13,45 @@
  *= require_tree .
  *= require_self
  */
- @import "bootstrap/scss/bootstrap"; 
+ @import "bootstrap/scss/bootstrap";
+
+ .container {
+  margin-top: 50px;
+  width: 40vw;
+   justify-content: center ;
+    h1 {
+      color: rgb(154, 56, 56);
+      font-size: 30px;
+      text-align: center;
+    }
+    h2 {
+      text-align: center;
+    }
+    a {
+      text-decoration: none;
+      color: rgb(198, 95, 57);
+    }
+    li:hover {
+      background-color: rgb(75, 75, 221);
+    }
+    p {
+      text-align: center;
+    }
+  }
+ #link {
+  color: rgb(163, 163, 22);
+ }
+ #link:hover {
+  font-size: 25px;
+ }
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  border: 3px dotted violet;
+  border-radius: 5px;
+  padding-left: 15px;
+  margin-bottom: 10px;
+}
